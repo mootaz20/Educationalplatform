@@ -1,0 +1,35 @@
+<div class="container p-3">
+    <div class="text-dark text-center">
+        <h1>Popular Courses</h1>
+    </div>
+    <div class="summary mt-5">
+        <p class="fw-bold text-dark fs-5">Highest rated courses by students:</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum est dolor in provident explicabo cumque repellat molestias velit. Soluta nesciunt veniam odio obcaecati nam quia adipisci harum officiis facere labore. Omnis quasi laborum saepe beatae dolores ex iure, ducimus natus cupiditate fugiat animi culpa laudantium consectetur obcaecati voluptate dolorem fugit neque sit, cum commodi. Labore rerum hic veritatis illo ipsa.</p>
+    </div>
+    <div class="row mt-5">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4" *ngFor="let course of popularCourses; let i = index;">
+            <div class="card">
+                <img src="./assets/download.jfif" class="card-img-top" alt="error">
+                <div class="card-body">
+                    <h5 class="card-title">{{ course.title }}</h5>
+                    <p class="card-text">{{ course.desc }}</p>
+                    <div class="row mt-3 mb-3">
+                        <div class="col">
+                            <p class="card-text fw-bold">Price: {{ course.price }}</p>
+                        </div>
+                        <div class="col">
+                            <p class="card-text fw-bold">Rations: {{ course.rating }}</p>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col"><button type="button"  class="btn btn-outline-warning fw-bold" routerLink="/courses/checkout">BUY NOW</button></div>
+                        <div class="col"><button type="button"  class="btn btn-outline-warning fw-bold" [routerLink]="['/courses/course',course.id]">DETAILS</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <button type="button" class="btn btn-outline-danger btn-lg fw-bold" routerLink="/courses">Go to Course Page</button>
+    </div>
+</div>

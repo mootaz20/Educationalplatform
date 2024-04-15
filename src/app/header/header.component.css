@@ -1,0 +1,61 @@
+.TakeInPage{
+    background-color: rgb(65, 64, 64);
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: end;
+    padding-top: 6px;
+}
+.TakeInPage .flexx{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+.routeToOther{
+    background-color: rgb(18, 16, 16);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+}
+.routeToOther ul{
+    display: flex;
+    margin-right: 20px;
+    list-style: none;
+    padding-top: 15px;
+}
+.routeToOther .title h1{
+    color: rgb(148, 3, 3);
+    font-size: 40px;
+}
+.active{
+    color: rgb(141, 1, 1);
+}
+@media screen and (max-width: 600px) {
+    .TakeInPage .flexx a {
+        margin-right: 10px;
+    }
+
+    .routeToOther ul {
+        margin-right: 0;
+    }
+
+    .routeToOther .title h1 {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .TakeInPage, .routeToOther {
+        flex-direction: column;
+    }
+    .routeToOther{
+        height: 140px;
+    }
+}

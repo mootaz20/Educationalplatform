@@ -1,0 +1,39 @@
+<div class="back pb-5">
+    <div class="container pt-5">
+        <div class="text-dark text-center pt-2 mt-5">
+            <h1>CONTACT US</h1>
+        </div>
+        <div class="row mt-5 justify-content-center">
+            <div class="col-8">
+                <form #formSubmit="ngForm" (ngSubmit)="onSubmitClick(formSubmit)">
+                    <div>
+                        <label for="name">First Name :</label><br />
+                        <input type="text" [(ngModel)]="firstName" id="name" name="first" placeholder="Your First Name" required /><br />
+                    </div>
+                    <div>
+                        <label for="name">Last Name :</label><br />
+                        <input type="text" [(ngModel)]="lastName" id="name" name="last" placeholder="Your Last Name" required /><br />
+                    </div>
+                    <div>
+                        <label for="name">Country :</label><br />
+                        <select name="country" [(ngModel)]="country" id="country">
+                            <option value="usa" selected>USA (United States of America)</option>
+                            <option value="canada">Canada</option>
+                            <option value="france">France</option>
+                            <option value="germany">Germany</option>
+                            <option value="korea">Korea</option>
+                            <option value="syria">Syria</option>
+                            <option value="mexico">Mexico</option>
+                            <option value="other">Other Country...</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="subject">Subject : </label><br />
+                        <textarea name="subject" [(ngModel)]="message" id="subject" placeholder="Write something..." rows="10"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-outline-danger">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

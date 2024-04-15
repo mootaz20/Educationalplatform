@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Educational-platform": {
+    "angularRoute": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/educational-platform",
+            "outputPath": "dist/Educationalplatform",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Educational-platform:build:production"
+              "browserTarget": "angularRoute:build:production"
             },
             "development": {
-              "browserTarget": "Educational-platform:build:development"
+              "browserTarget": "angularRoute:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Educational-platform:build"
+            "browserTarget": "angularRoute:build"
           }
         },
         "test": {
@@ -87,6 +87,8 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []

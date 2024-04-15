@@ -1,0 +1,74 @@
+<div class="container back mt-5 pt-5 mb-5 pb-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 col-sm-12 back2">
+                <div>
+                    <img src="./assets/download.jfif" alt="error">
+                    <h1 class="p-3">{{selectedCourse.title}}</h1>
+                    <div class="row fw-bold justify-content-center">
+                        <div class="col-lg-3 col-md-4 col-sm-4">
+                            <p>Course rating : {{selectedCourse.rating}}</p>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4">
+                            <p>Duration : {{selectedCourse.duration}}</p>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4">
+                            <p>Author : {{selectedCourse.author}}</p>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="fw-bold">
+                            <p>{{selectedCourse.desc}}</p>
+                        </div>
+                        <div class="line ">
+                            <h4>Students Reviews</h4>
+                        </div>
+                        <div class="mt-3">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, aut. Quae saepe aliquam harum ab facilis nemo maiores qui quas perferendis voluptas non veniam voluptatum deleniti eligendi, dolorum officiis consequatur. Nobis, quod omnis! Perspiciatis adipisci quasi pariatur, quae accusamus, sed saepe inventore porro eaque reiciendis dignissimos. Nemo nisi, quam recusandae magni non eos incidunt aliquam voluptatem in odio repellat consequuntur!</p>
+                        </div>
+                        <div>
+                            <h3>Mark mad</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium unde neque ullam, quia et doloremque repudiandae eius autem mollitia, perspiciatis recusandae. Sed odit corporis blanditiis ipsam similique repellat porro atque. Libero rem nobis minus fugiat quas obcaecati! Accusamus amet, laborum soluta ipsum aspernatur beatae aliquid delectus? Esse, nemo est nisi magni repellat sed animi iste sapiente? Similique eligendi possimus reprehenderit?</p>
+                        </div>
+                        <div>
+                            <h3>John Smith</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium unde neque ullam, quia et doloremque repudiandae eius autem mollitia, perspiciatis recusandae. Sed odit corporis blanditiis ipsam similique repellat porro atque. Libero rem nobis minus fugiat quas obcaecati! Accusamus amet,</p>
+                        </div>
+                        <div>
+                            <h3>John Wick</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium unde neque ullam, quia et doloremque repudiandae eius autem mollitia, perspiciatis recusandae. Sed odit corporis blanditiis ipsam similique repellat porro atque.</p>
+                        </div>
+                    </div>
+                    <div class="row p-4">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <button type="button" [routerLink]="'/courses/course/'+ (selectedCourse.id - 1)" [state]="selectedCourse" class="btn btn-outline-danger fw-bold btn-lg">Previous Course</button>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 text-end">
+                            <button type="button" [routerLink]="'/courses/course/'+ (selectedCourse.id + 1)" [state]="selectedCourse" class="btn btn-outline-danger fw-bold btn-lg">Next Course</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mt-3 col-md-10 col-sm-12 p-2 back3">
+                <div class="pos">
+                    <p>Get Flat 80% Off on this course</p>
+                </div>
+                <p class="fw-bold p-3 fs-3">Personal</p>
+                <h3>$499 <s class="fs-5">$3199</s> <span class="fs-4"> 83%</span> OFF</h3>
+                <button type="button" class="btn mt-4 btn-outline-danger btn-lg fw-bold" routerLink="/courses/checkout" [state]="selectedCourse">Buy this course</button>
+                <div class="row mt-5 line1">
+                    <div class="col-6">
+                        <p><a href="">Gift this course</a></p>
+                    </div>
+                    <div class="col-6">
+                        <p><a href="">Apply coupon</a></p>
+                    </div>
+                </div>
+                <div class="mt-4 text-center">
+                    <h3>Subscribe to this platform!</h3>
+                    <button type="button" class="btn btn-outline-danger btn-lg fw-bold mt-5">Start Subscription</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

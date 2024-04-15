@@ -1,0 +1,14 @@
+.back{
+    background-color: rgb(210, 209, 209);
+}
+label{
+    font-weight: bold;
+    font-size: 19px;
+}
+input,textarea,select,button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-weight: bold;
+}

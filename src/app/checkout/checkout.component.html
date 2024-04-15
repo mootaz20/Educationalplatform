@@ -1,0 +1,56 @@
+<div class="container mt-5 mb-5 pt-5">
+    <div class="row pt-2 mb-5">
+        <div class="col-lg-6 col-md-12 col-sm-12 p-4">
+            <h2>Payment Information</h2>
+            <form action="">
+                <label for="fullName">Full Name : </label><br>
+                <input type="text" id="fullName" name="full_name" placeholder="Enter your full name"><br>
+                <label for="CardNumber">Card Number :</label><br>
+                <input type="number" id="cardNumber" name="card_no" placeholder="0000 0000  0000 0000"><br>
+                <label for="expiryDate">Expiry Date: &nbsp;</label>
+                <select id="month" name="expire_month">
+                    <option value="1">January(01)</option>
+                    <option value="2">February(02)</option>
+                    <option value="3">March(03)</option>
+                    <option value="4">April(04)</option>
+                </select><br>
+                <label for="CVV">CVV :</label>
+                <input type="number" id="cvv" name="cvv" placeholder="Ex. 123">
+                <a href="https://www.cvvnumber.com/" class="fw-bold m-4">What is CVV ?</a>
+                <div>
+                    <button type="button" class="btn mt-5 btn-outline-danger fw-bold btn-lg">BUY NOW</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 p-4 fw-bold">
+            <h1>{{course.title}}</h1>
+            <div class="row line">
+                <div class="col-6 text-start">
+                   <ul>
+                    <li>{{course.price}} * 1 course</li>
+                    <li>Discount</li>
+                    <li>Subtotal</li>
+                    <li>Tax</li>
+                   </ul>
+                </div>
+                <div class="col-6 text-end">
+                    <ul class="highlight">
+                        <li>{{course.price}} USD</li>
+                        <li>0.00 USD</li>
+                        <li>{{course.price}} USD</li>
+                        <li>47.41 USD</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row p-5">
+                <div class="col-6 text-start">
+                    <p class="fs-3">TOTAL</p>
+                </div>
+                <div class="col-6 pt-2 text-end">
+                    <p class="fs-5 text-secondary">{{course.price * 47.5}} USD</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

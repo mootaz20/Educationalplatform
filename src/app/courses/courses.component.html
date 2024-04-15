@@ -1,0 +1,44 @@
+<div class="container mb-5 mt-5 back">
+    <div class="photo">
+        <div class="cent">
+            <h1>Empower your future with this platform's high-quality online coding classes.</h1>
+        </div>
+    </div>
+    <div class="row mt-5 pt-3 justify-content-center">
+        <div class="col-lg-10">
+            <div class="line">
+                <h1>Choose the course that best suits you</h1>
+            </div>
+            <div class="row">
+                <div class="loader-container" *ngIf="isLoader">
+                    <div class="loader"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4" *ngFor="let course of allCourses">
+                    <div class="card">
+                        <img src="./assets/download.jfif" class="card-img-top" alt="error">
+                        <div class="card-body">
+                            <h5 class="card-title">{{course.title}}</h5>
+                            <p class="card-text">{{course.desc}} </p>
+                            <div class="row mt-3 mb-3">
+                                <div class="col">
+                                    <p class="card-text fw-bold">Price: {{course.price}} </p>
+                                </div>
+                                <div class="col">
+                                    <p class="card-text fw-bold">Rating: {{course.rating}} </p>
+                                </div>
+                            </div>
+                            <div class="row text-center">
+                                <div class="col">
+                                    <button type="button" routerLink="/courses/checkout" [state]="course" class="btn btn-outline-warning fw-bold">BUY NOW</button>
+                                </div>
+                                <div class="col">
+                                    <button type="button" [routerLink]="'course/'+ course.id" class="btn btn-outline-warning fw-bold">DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="container mb-5">
+    <div class="text-center text-dark mt-5 pt-5 mb-5 pb-5">
+        <h1>Our Services</h1>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4" *ngFor="let service of allServices">
+            <div class="card">
+                <img src="./assets/How-to-Create-an-Online-Course-For-Free--Complete-Guide--6.jpg" class="card-img-top" alt="error">
+                <div class="card-body">
+                    <h4 class="card-title">{{service.title}}</h4>
+                    <p class="card-text fw-bold">{{service.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="back">
+    <div class="back1">
+        <h1>Please Login Here</h1>
+        <form action="" class="p-4">
+            <label for="username">Username : </label><br />
+            <input type="text" id="username" placeholder="Your name" name="username" #username required/><br />
+            
+            <label for="password">Password : </label><br />
+            <input type="password" id="password" placeholder="Your password" name="password" #password required/><br />
+            
+            <input type="button" (click)="onSubmitClick(username.value,password.value)" class="btn btn-outline-danger btn-lg fw-bold" value="Login"/>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+<div class="allContent">
+    <div class="mainContent">
+        <div class="TakeInPage">
+                <ul class="flexx">
+                    <li>
+                        <a routerLink="" fragment="search">SEARCH</a>
+                    </li>
+                    <li>
+                        <a routerLink="" fragment="popular">POPULAR</a>
+                    </li>
+                    <li>
+                        <a routerLink="" fragment="testimony">TESTIMONY</a>
+                    </li>
+                    <li>
+                        <a routerLink="" fragment="services">SERVICES</a>
+                    </li>
+                    <li>
+                        <a routerLink="" fragment="contact">CONTACT</a>
+                    </li>
+                </ul>
+        </div>
+        <div class="routeToOther">
+            <div class="title">
+                <h1>Educational platform</h1>
+            </div>
+            <div class="navigate">
+                <ul>
+                    <li>
+                        <a routerLink="" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">HOME</a>
+                    </li>
+                    <li>
+                        <a routerLink="about" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">ABOUT</a>
+                    </li>
+                    <li>
+                        <a routerLink="contact" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">CONTACT</a>
+                    </li>
+                    <li>
+                        <a routerLink="courses" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">COURSES</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="logged">
+                <ul>
+                    <li>
+                        <a routerLink="/login">LOGIN</a>
+                    </li>
+                    <li>
+                        <a class="text-light" (click)="onLinkClick()">LOGOUT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
